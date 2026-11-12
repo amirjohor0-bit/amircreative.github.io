@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Share your feedback and comments with Muhammad Amir.">
+
+    <title>Your Comments | AMIR STUDIO</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="comments-page">
+
+    <!-- NAVIGATION BAR -->
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✦</span>
+                AMIR<span class="logo-highlight">STUDIO.</span>
+            </a>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="biodata.html">My Biodata</a>
+                <a href="portfolio.html">My Portfolio</a>
+                <a href="video.html">My Video</a>
+                <a href="comments.html" class="active">Your Comments</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- PAGE INTRODUCTION -->
+
+        <section class="comments-hero container">
+
+            <p class="section-label">LET'S CONNECT</p>
+
+            <h1>
+                Your Voice,
+                <span class="gradient-text">Your Comments.</span>
+            </h1>
+
+            <p>
+                I would love to hear your thoughts.
+                Share your feedback, suggestions or
+                any ideas to help me improve.
+            </p>
+
+        </section>
+
+
+        <!-- COMMENTS SECTION -->
+
+        <section class="comments-section container">
+
+            <div class="comments-layout">
+
+                <!-- LEFT INFORMATION PANEL -->
+
+                <div class="comment-intro-card">
+
+                    <span class="comment-status">
+                        <span class="comment-status-dot"></span>
+                        OPEN TO FEEDBACK
+                    </span>
+
+                    <h2>
+                        Let's make something
+                        <span class="gradient-text">better together.</span>
+                    </h2>
+
+                    <p class="comment-intro-description">
+                        Every comment and suggestion is valuable.
+                        Whether you have an idea, a question or
+                        feedback about my website and creative work,
+                        feel free to share it with me.
+                    </p>
+
+                    <div class="comment-benefits">
+
+                        <div class="comment-benefit">
+                            <span class="benefit-icon">✦</span>
+                            <div>
+                                <h3>Share Your Feedback</h3>
+                                <p>Let me know what you think about my website.</p>
+                            </div>
+                        </div>
+
+                        <div class="comment-benefit">
+                            <span class="benefit-icon">◈</span>
+                            <div>
+                                <h3>Creative Suggestions</h3>
+                                <p>Share ideas that could inspire new projects.</p>
+                            </div>
+                        </div>
+
+                        <div class="comment-benefit">
+                            <span class="benefit-icon">↗</span>
+                            <div>
+                                <h3>Start a Conversation</h3>
+                                <p>Have a question or want to connect? Send a message.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="comment-note">
+                        <span>✧</span>
+                        <p>
+                            Thank you for taking the time to visit
+                            AMIR STUDIO.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT FEEDBACK FORM -->
+
+                <div class="feedback-form-card">
+
+                    <div class="feedback-form-heading">
+
+                        <p class="section-label">FEEDBACK FORM</p>
+
+                        <h2>Send a <span class="gradient-text">Comment.</span></h2>
+
+                        <p>
+                            Fill in the details below and share your thoughts.
+                        </p>
+
+                    </div>
+
+
+                    <form id="commentForm" class="comment-form">
+
+                        <!-- NAME -->
+
+                        <div class="form-group">
+
+                            <label for="fullName">Full Name *</label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                maxlength="80"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+
+                        <div class="form-group">
+
+                            <label for="email">Email Address *</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email address"
+                                autocomplete="email"
+                                maxlength="120"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- FEEDBACK TOPIC -->
+
+                        <div class="form-group">
+
+                            <label for="feedbackTopic">Feedback Topic *</label>
+
+                            <select
+                                id="feedbackTopic"
+                                name="feedbackTopic"
+                                required
+                            >
+
+                                <option value="" disabled selected>
+                                    Select a topic
+                                </option>
+
+                                <option value="Website Feedback">
+                                    Website Feedback
+                                </option>
+
+                                <option value="Portfolio Review">
+                                    Portfolio Review
+                                </option>
+
+                                <option value="Creative Suggestions">
+                                    Creative Suggestions
+                                </option>
+
+                                <option value="General Enquiry">
+                                    General Enquiry
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- MESSAGE -->
+
+                        <div class="form-group">
+
+                            <label for="message">Your Comment *</label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                maxlength="1000"
+                                placeholder="Write your comments or suggestions here..."
+                                required
+                            ></textarea>
+
+                            <span class="form-hint">
+                                Maximum 1000 characters.
+                            </span>
+
+                        </div>
+
+
+                        <!-- SUBMIT BUTTON -->
+
+                        <button type="submit" class="comment-submit-btn">
+
+                            SUBMIT FEEDBACK
+
+                            <span>↗</span>
+
+                        </button>
+
+
+                        <!-- SUCCESS MESSAGE -->
+
+                        <p
+                            id="commentSuccess"
+                            class="comment-success"
+                            role="status"
+                            aria-live="polite"
+                            hidden
+                        ></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 Muhammad Amir. All rights reserved.
+            </p>
+
+            <a href="index.html">
+                Back to Home ↗
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
